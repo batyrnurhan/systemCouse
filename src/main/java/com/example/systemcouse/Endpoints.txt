@@ -1,0 +1,28 @@
+username: ADMIN, password: ADMIN
+username: INSTRUCTOR, password: INSTRUCTOR
+DELETE http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/deleteScore/{scoreId} ->      Response deleteRank(int)
+DELETE http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/deleteTask/{taskId}   ->      Response deleteTask(int)
+DELETE http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/deleteUser/{userId}   ->      Response deleteUser(int)
+GET http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/selectScore/{id}      ->      Response selectScore(int)
+GET http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/selectScores          ->      Response selectScores()
+GET http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/selectTask/{id}       ->      Response selectTask(int)
+GET http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/selectTasks           ->      Response selectTasks()
+GET http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/selectUser/{id}       ->      Response selectUser(int)
+GET http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/selectUsers           ->      Response selectUsers()
+POST http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/insertScore           ->      Response insertScore(Score)
+POST http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/insertTask            ->      Response insertTask(Task)
+POST http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/insertUser            ->      Response insertUser(User_)
+GET http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/jms                   ->      String getMessage()
+POST http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/jms                   ->      String sendMessage(String)
+PUT http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/updateScore/          ->      Response updateScore(Score)
+PUT http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/updateTask/           ->      Response updateTask(Task)
+PUT http://localhost:8080/systemCouse-1.0-SNAPSHOT/api/courseSystem/updateUser/{userId}   ->      Response updateUser(long, String, Date, long)
+
+insertUser
+"userId": 110
+"userName": "User Name 110"
+"lastSession": "2021-12-24"
+"score":{
+"scoreId":110,
+"scoreName":"Score Name 110"
+}
